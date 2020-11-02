@@ -1,0 +1,140 @@
+/* user-list-image加上transform以後hover時圖片似乎會位移?*/
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  color: coral;
+  font-size: 24px;
+  transition: background 0.3s;
+}
+
+#logo:hover {
+  background: #e3e3e3;
+}
+
+.active .page-title, .toggler-clicked {
+  color: #404040;
+}
+
+.page-title:hover {
+  color: coral;
+}
+
+#search-column-div {
+  position: relative;
+  width: 200px;
+  transition: width 0.5s;
+}
+
+#search-column {
+  display: block;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+#search-column:hover {
+  background-color: #ededed;
+}
+
+#search-column-btn {
+  position: absolute;
+  top: 15px;
+  left: 160px;
+  color: rgba(0,0,0,.5);
+  transition: all 0.5s;
+}
+
+#no-result-container {
+  min-height: 300px;
+}
+
+#no-result-box {
+  border: 3px solid #a6a6a6;
+}
+
+#no-result {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #a6a6a6;
+}
+
+#card-list-toggler-container {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#card-toggler:hover, #list-toggler:hover {
+  cursor: pointer;
+}
+
+#users-panel {
+  color: #404040;
+}
+
+.card-container {
+  min-height: 380px;
+}
+
+.card {
+  width: 90%;
+  max-width: 12rem;
+  border-radius: 20px !important;
+  box-shadow: 0 2px 5px 5px #cccccc;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px 10px #d9d9d9;
+  cursor: pointer;
+}
+
+.user-avatar {
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.modal {
+  min-width: 500px;
+}
+
+.fas.fa-heart {
+  color: coral;
+}
+
+.user-modal-favorite {
+  background-color: coral;
+  color: white;
+}
+
+.lg-icon-container {
+  width: 46px;
+  height: 46px;
+}
+
+.user-modal-close:hover {
+  color: coral
+}
+
+.card-added-background {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: coral;
+}
+
+.card-added-color {
+  color: white;
+}
+
+.user-list-image {
+  width: 110px;
+  height: 110px;
+  transition: transform 0.5s;
+}
+
+.user-list-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.list-added-avatar {
+  border: 5px solid coral;
+}

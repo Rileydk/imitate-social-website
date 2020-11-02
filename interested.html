@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet: Find Friends From All Over The World - Interested List</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+
+<body>
+  <div id="panel-container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a id="logo" class="navbar-brand p-2 rounded-lg" href="index.html"><span>Meet</span></a>
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+        <!-- Title -->
+        <div class="navbar-nav">
+          <a class="nav-item nav-link mr-2" href="index.html"><span class="page-title">HOME</span></a>
+          <a class="nav-item nav-link active" href="interested.html"><span class="page-title">Interested</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Card / List Toggler -->
+    <div id="card-list-toggler" class="d-flex justify-content-end">
+      <div id="card-list-toggler-container" class="mr-4 mt-3">
+        <i id="card-toggler" class="toggler-clicked fas fa-th fa-lg mr-1"></i>
+        <i id="list-toggler" class="fas fa-bars fa-lg mr-2"></i>
+      </div>
+    </div>
+
+    <!-- User Panel -->
+    <div class="container p-4">
+      <div id="users-panel" class="row w-100"></div>
+    </div>
+
+    <!-- Paginator -->
+    <nav aria-label="Page navigation">
+      <ul id="paginator" class="pagination justify-content-center"></ul>
+    </nav>
+
+    <!-- User Info Modal -->
+    <div class="modal fade" id="user-info-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close user-modal-close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="user-modal-close">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-4">
+                <img id="user-modal-image" class="float-right rounded-circle" src="" alt="User Image">
+              </div>
+              <div class="col-8">
+                <p id="user-modal-descript"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" id="user-modal-add-interested"
+              class="lg-icon-container btn rounded-circle mr-3 d-flex align-items-center"><i
+                class="fas fa-heart fa-lg"></i></a>
+            <button type="button" class="btn btn-secondary user-modal-lose" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="delete-confirmation" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete Confirmation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="delete-confirmation-content" class="modal-body"></div>
+          <div class="modal-footer">
+            <button id="delete-confirmation-btn" type="button" class="btn btn-primary">Remove</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ad7eac093d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="interested.js"></script>
+    <script src="https://kit.fontawesome.com/ad7eac093d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+
+  </div>
+</body>
+
+</html>
